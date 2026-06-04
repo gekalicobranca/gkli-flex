@@ -13,6 +13,7 @@ Criar a agenda operacional de pagamentos da competencia, incluindo pagamentos pr
 - Reembolso
 - Outros pagamentos
 - Pagamentos recorrentes
+- Pagamentos gerados por recibos de empregados em PDF
 - Eventos de pagamento
 - Confirmacao e cancelamento futuros
 
@@ -23,6 +24,7 @@ Criar a agenda operacional de pagamentos da competencia, incluindo pagamentos pr
 - Bootstrap local de pagamentos, recorrencias e eventos
 - Repository de pagamentos cruzando colaboradores, comissoes e recorrencias
 - Tela Pagamentos com resumo, agenda, recorrencias e eventos
+- Vinculo de pagamento com importacao de recibos
 - Migration `202606040005_gkli_flex_sprint_5_pagamentos.sql`
 - Seed `gkli_flex_sprint_5_pagamentos_seed.sql`
 
@@ -35,7 +37,7 @@ Criar a agenda operacional de pagamentos da competencia, incluindo pagamentos pr
 
 ## Fluxo
 
-1. Pagamento previsto nasce manualmente, por recorrencia ou por comissao aprovada.
+1. Pagamento previsto nasce manualmente, por recorrencia, por comissao aprovada ou por recibo importado.
 2. Operacao agenda o pagamento.
 3. Operacao confirma pagamento ou cancela com motivo.
 4. Evento registra usuario, status anterior, status novo e motivo.

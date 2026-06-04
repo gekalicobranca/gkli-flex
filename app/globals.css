@@ -71,14 +71,22 @@ textarea {
 
 .brand-mark {
   align-items: center;
-  background: var(--classic-blue);
+  background: #fff;
   border-radius: 8px;
   color: #fff;
   display: grid;
   font-weight: 500;
   height: 36px;
   justify-content: center;
+  overflow: hidden;
   width: 36px;
+}
+
+.brand-mark img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .brand-title {

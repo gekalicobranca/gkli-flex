@@ -3,7 +3,8 @@ import type { ImportSource } from "./domain";
 export function formatImportSource(source: ImportSource) {
   const names: Record<ImportSource, string> = {
     omie: "Omie",
-    banco_inter: "Banco Inter"
+    banco_inter: "Banco Inter",
+    recibos_pagamento: "Recibos de pagamento"
   };
 
   return names[source];

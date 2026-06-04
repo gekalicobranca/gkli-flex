@@ -20,7 +20,9 @@ export function FlexShell({
     <div className="app-shell">
       <aside className="sidebar">
         <Link className="brand" href="/modulos/gkli-flex">
-          <span className="brand-mark">F</span>
+          <span className="brand-mark">
+            <img alt="GKLI Flex" src="/gkit-icon.png" />
+          </span>
           <span>
             <span className="brand-title">GKLI Flex</span>
             <span className="brand-subtitle">Financeiro operacional light</span>

@@ -17,6 +17,7 @@ export type Payment = {
   favorecido: string;
   colaboradorId: string | null;
   comissaoId: string | null;
+  importacaoId: string | null;
   descricao: string;
   vencimento: string;
   valor: number;
@@ -45,7 +46,8 @@ export type PaymentEventAction =
   | "confirmado"
   | "cancelado"
   | "gerado_recorrencia"
-  | "gerado_comissao";
+  | "gerado_comissao"
+  | "gerado_recibo_pagamento";
 
 export type PaymentEvent = {
   id: string;

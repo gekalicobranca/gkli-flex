@@ -1,6 +1,6 @@
-export type ImportSource = "omie" | "banco_inter";
+export type ImportSource = "omie" | "banco_inter" | "recibos_pagamento";
 
-export type ImportFormat = "xlsx" | "csv";
+export type ImportFormat = "xlsx" | "csv" | "pdf";
 
 export type ImportStatus =
   | "rascunho"
@@ -41,7 +41,7 @@ export type ImportPreviewRow = {
   id: string;
   importacaoId: string;
   linha: number;
-  tipo: "receita" | "extrato_lancamento";
+  tipo: "receita" | "extrato_lancamento" | "pagamento_salario";
   data: string;
   descricao: string;
   categoriaSugerida: string | null;

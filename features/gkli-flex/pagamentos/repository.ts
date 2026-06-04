@@ -1,5 +1,6 @@
 import { sprintOneBootstrap } from "../bootstrap-data";
 import { commissions } from "../comissoes/bootstrap-data";
+import { importBatches } from "../importacoes/bootstrap-data";
 import { paymentEvents, payments, recurringPayments } from "./bootstrap-data";
 import type { PaymentOverview } from "./domain";
 
@@ -30,6 +31,7 @@ export async function getPaymentDashboard() {
         sprintOneBootstrap.collaborators.find((item) => item.id === payment.colaboradorId) ??
         null,
       commission: commissions.find((item) => item.id === payment.comissaoId) ?? null,
+      importBatch: importBatches.find((item) => item.id === payment.importacaoId) ?? null,
       recurring:
         recurringPayments.find((item) => item.id === payment.recorrenteId) ?? null
     })),

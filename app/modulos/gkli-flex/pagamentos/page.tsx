@@ -63,7 +63,9 @@ export default async function PagamentosPage() {
                   <td>{row.favorecido}</td>
                   <td>
                     {row.commission
-                      ? "Comissao aprovada"
+                      ? "Comissão aprovada"
+                      : row.importBatch
+                        ? "Importação de recibos"
                       : row.recurring
                         ? "Recorrente"
                         : "Manual"}

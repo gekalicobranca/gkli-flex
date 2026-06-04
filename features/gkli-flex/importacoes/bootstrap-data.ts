@@ -28,6 +28,20 @@ export const importBatches: ImportBatch[] = [
     linhasBloqueadas: 5,
     createdAt: "2026-06-03T16:12:00.000Z",
     updatedAt: "2026-06-03T16:18:00.000Z"
+  },
+  {
+    id: "import-recibos-2026-04",
+    competenciaId: "competence-2026-04",
+    origem: "recibos_pagamento",
+    formato: "pdf",
+    arquivoNome: "Recibo de Pagamento_Empregados.pdf",
+    status: "pronto_para_confirmar",
+    totalLinhas: 4,
+    linhasValidas: 4,
+    linhasComAviso: 0,
+    linhasBloqueadas: 0,
+    createdAt: "2026-06-04T11:20:00.000Z",
+    updatedAt: "2026-06-04T11:22:00.000Z"
   }
 ];
 
@@ -114,5 +128,49 @@ export const importPreviewRows: ImportPreviewRow[] = [
     categoriaSugerida: null,
     valor: 0,
     status: "bloqueada"
+  },
+  {
+    id: "preview-recibo-camila",
+    importacaoId: "import-recibos-2026-04",
+    linha: 1,
+    tipo: "pagamento_salario",
+    data: "2026-05-05",
+    descricao: "Salário líquido Abril/2026 - CAMILA MOTA PAGANINI",
+    categoriaSugerida: "Salários",
+    valor: 1558,
+    status: "valida"
+  },
+  {
+    id: "preview-recibo-edivania",
+    importacaoId: "import-recibos-2026-04",
+    linha: 2,
+    tipo: "pagamento_salario",
+    data: "2026-05-05",
+    descricao: "Salário líquido Abril/2026 - EDIVANIA NEVES SOUZA",
+    categoriaSugerida: "Salários",
+    valor: 2047,
+    status: "valida"
+  },
+  {
+    id: "preview-recibo-estefania",
+    importacaoId: "import-recibos-2026-04",
+    linha: 3,
+    tipo: "pagamento_salario",
+    data: "2026-05-05",
+    descricao: "Salário líquido Abril/2026 - ESTEFANIA MOTA PAGANINI",
+    categoriaSugerida: "Salários",
+    valor: 1979,
+    status: "valida"
+  },
+  {
+    id: "preview-recibo-maria",
+    importacaoId: "import-recibos-2026-04",
+    linha: 4,
+    tipo: "pagamento_salario",
+    data: "2026-05-05",
+    descricao: "Salário líquido Abril/2026 - MARIA DANIELLE SOUSA LIMA",
+    categoriaSugerida: "Salários",
+    valor: 1625,
+    status: "valida"
   }
 ];

@@ -8,11 +8,13 @@ Criar a base operacional para importar arquivos financeiros com validacao, revis
 
 - Omie em XLSX
 - Banco Inter em CSV
+- Recibos de pagamento em PDF
 - Historico de lotes
 - Pre-validacao
 - Inconsistencias com aviso ou bloqueio
 - Previa normalizada das linhas
 - Eventos de importacao
+- Geracao de pagamentos de salario a partir de recibos
 
 ## Entregue
 
