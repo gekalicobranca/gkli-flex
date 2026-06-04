@@ -18,8 +18,9 @@ export default async function FechamentosPage() {
       description="Checklist, bloqueios, snapshot financeiro e reabertura auditada."
     >
       <PageHeader
-        title="Fechamento da competencia"
-        description="A competencia so fecha quando importacoes, classificacoes, comissoes, pagamentos e divergencias estiverem resolvidos."
+        eyebrow="Controle"
+        title="Fechamento da competência"
+        description="A competência só fecha quando importações, classificações, comissões, pagamentos e divergências estiverem resolvidos."
         actions={
           <>
             <button className="button secondary">
@@ -45,7 +46,7 @@ export default async function FechamentosPage() {
           <div className="metric">{dashboard.overview.blockersOpen}</div>
           <p className="item-meta">{dashboard.overview.warningsOpen} aviso(s) em aberto.</p>
         </Panel>
-        <Panel title="Pode fechar" note="Validacao">
+        <Panel title="Pode fechar" note="Validação">
           <div className="metric">{dashboard.overview.canClose ? "Sim" : "Nao"}</div>
           <p className="item-meta">
             <StatusBadge tone={getClosingStatusTone(dashboard.closing.status)}>
@@ -56,7 +57,7 @@ export default async function FechamentosPage() {
       </div>
 
       <div className="grid cols-2">
-        <Panel title="Checklist obrigatorio" note="Junho/2026">
+        <Panel title="Checklist obrigatório" note="Junho/2026">
           <div className="list">
             {dashboard.checklist.map((item) => (
               <div className="list-item" key={item.title}>
@@ -90,7 +91,7 @@ export default async function FechamentosPage() {
       </div>
 
       <div className="grid cols-2 stack-lg">
-        <Panel title="Snapshot financeiro" note="Previa historica">
+        <Panel title="Snapshot financeiro" note="Prévia histórica">
           {dashboard.snapshot ? (
             <table className="table">
               <tbody>
@@ -122,15 +123,15 @@ export default async function FechamentosPage() {
             </table>
           ) : (
             <div className="empty-state">
-              O snapshot sera gerado no fechamento e preservara valores historicos.
+              O snapshot será gerado no fechamento e preservará valores históricos.
             </div>
           )}
         </Panel>
 
-        <Panel title="Reabertura" note="Motivo obrigatorio">
+        <Panel title="Reabertura" note="Motivo obrigatório">
           <div className="empty-state">
-            Competencias fechadas so podem ser reabertas com usuario responsavel,
-            motivo obrigatorio e registro de auditoria.
+            Competências fechadas só podem ser reabertas com usuário responsável,
+            motivo obrigatório e registro de auditoria.
           </div>
         </Panel>
       </div>

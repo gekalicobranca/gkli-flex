@@ -7,20 +7,20 @@ export const currentCompetence = {
 
 export const cockpitTasks = [
   {
-    title: "Validar importacao Banco Inter",
-    meta: "CSV de 03/06 aguardando classificacao",
-    status: "Prioritario",
+    title: "Validar importação Banco Inter",
+    meta: "CSV de 03/06 aguardando classificação",
+    status: "Prioritário",
     tone: "yellow"
   },
   {
-    title: "Conferir comissoes calculadas",
-    meta: "8 registros pendentes de conferencia",
+    title: "Conferir comissões calculadas",
+    meta: "8 registros pendentes de conferência",
     status: "Pendente",
     tone: "blue"
   },
   {
     title: "Resolver despesas sem categoria",
-    meta: "12 lancamentos bloqueiam fechamento",
+    meta: "12 lançamentos bloqueiam o fechamento",
     status: "Bloqueio",
     tone: "red"
   }
@@ -28,9 +28,9 @@ export const cockpitTasks = [
 
 export const recentActivities = [
   "Receitas Omie importadas para Junho/2026",
-  "Regra 'Tarifa bancaria' aplicada em 6 lancamentos",
-  "Pagamento recorrente de pro-labore gerado",
-  "Orcamento de despesas administrativas ajustado"
+  "Regra 'Tarifa bancária' aplicada em 6 lançamentos",
+  "Pagamento recorrente de pró-labore gerado",
+  "Orçamento de despesas administrativas ajustado"
 ];
 
 export const imports = [

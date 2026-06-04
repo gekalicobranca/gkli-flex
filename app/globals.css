@@ -126,7 +126,7 @@ textarea {
   display: flex;
   gap: 16px;
   justify-content: space-between;
-  min-height: 66px;
+  min-height: 60px;
   padding: 0 28px;
   position: sticky;
   top: 0;
@@ -145,7 +145,7 @@ textarea {
 }
 
 .content {
-  padding: 28px;
+  padding: 22px 28px 28px;
 }
 
 .page-header {
@@ -153,11 +153,18 @@ textarea {
   display: flex;
   gap: 18px;
   justify-content: space-between;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
+}
+
+.page-eyebrow {
+  color: var(--classic-blue-700);
+  font-size: 11px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
 }
 
 .page-title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   margin: 0;
 }

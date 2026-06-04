@@ -14,11 +14,12 @@ export default async function PagamentosPage() {
     <FlexShell
       activeHref="/modulos/gkli-flex/pagamentos"
       title="Pagamentos"
-      description="Comissoes, salarios, pro-labore, fornecedores, reembolsos e recorrencias."
+      description="Comissões, salários, pró-labore, fornecedores, reembolsos e recorrências."
     >
       <PageHeader
+        eyebrow="Operação"
         title="Agenda de pagamentos"
-        description="Controle de previstos, agendados, pagos e cancelados, incluindo geracao automatica de recorrentes."
+        description="Controle de previstos, agendados, pagos e cancelados, incluindo geração automática de recorrentes."
         actions={
           <button className="button">
             <CalendarPlus size={16} />
@@ -80,7 +81,7 @@ export default async function PagamentosPage() {
       </div>
 
       <div className="grid cols-2 stack-lg">
-        <Panel title="Recorrencias ativas" note="Geracao automatica futura">
+        <Panel title="Recorrências ativas" note="Geração automática futura">
           <div className="list">
             {dashboard.recurringPayments.map((row) => (
               <div className="list-item" key={row.id}>

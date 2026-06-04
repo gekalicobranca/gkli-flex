@@ -23,7 +23,7 @@ export function FlexShell({
           <span className="brand-mark">F</span>
           <span>
             <span className="brand-title">GKLI Flex</span>
-            <span className="brand-subtitle">Financeiro operacional</span>
+            <span className="brand-subtitle">Financeiro operacional light</span>
           </span>
         </Link>
 
@@ -59,7 +59,7 @@ export function FlexShell({
             <div className="module-title">{title}</div>
             {description ? <div className="module-context">{description}</div> : null}
           </div>
-          <span className="badge blue">Schema gkli_flex</span>
+          <span className="badge blue">Competência aberta</span>
         </header>
         <section className="content">{children}</section>
       </main>
@@ -71,12 +71,14 @@ type PageHeaderProps = {
   title: string;
   description: string;
   actions?: React.ReactNode;
+  eyebrow?: string;
 };
 
-export function PageHeader({ title, description, actions }: PageHeaderProps) {
+export function PageHeader({ title, description, actions, eyebrow }: PageHeaderProps) {
   return (
     <div className="page-header">
       <div>
+        {eyebrow ? <div className="page-eyebrow">{eyebrow}</div> : null}
         <h1 className="page-title">{title}</h1>
         <p className="page-description">{description}</p>
       </div>

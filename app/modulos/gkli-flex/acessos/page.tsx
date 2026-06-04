@@ -9,10 +9,11 @@ export default async function AcessosPage() {
     <FlexShell
       activeHref="/modulos/gkli-flex/acessos"
       title="Acessos"
-      description="Controle por modulo, acao e permissao."
+      description="Controle por módulo, ação e permissão."
     >
       <PageHeader
-        title="Permissoes do Flex"
+        eyebrow="Administração"
+        title="Permissões do Flex"
         description="Modelo granular semelhante ao COB, mas isolado no namespace gkli_flex."
       />
 
@@ -25,13 +26,13 @@ export default async function AcessosPage() {
                   <div className="item-title">{role.nome}</div>
                   <div className="item-meta">{role.descricao}</div>
                 </div>
-                <StatusBadge>{role.permissionCount} permissoes</StatusBadge>
+                <StatusBadge>{role.permissionCount} permissões</StatusBadge>
               </div>
             ))}
           </div>
         </Panel>
 
-        <Panel title="Catalogo de permissoes" note="Namespace gkli_flex">
+        <Panel title="Catálogo de permissões" note="Namespace gkli_flex">
           <div className="list">
             {flexPermissionCatalog.map((item) => (
               <div className="list-item" key={item.permission}>

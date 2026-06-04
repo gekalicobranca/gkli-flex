@@ -9,56 +9,56 @@ export const flexPermissionCatalog: {
   {
     permission: "gkli_flex.admin",
     label: "Administrador Flex",
-    module: "Administracao",
-    description: "Acesso total ao app, incluindo colaboradores, permissoes e reaberturas."
+    module: "Administração",
+    description: "Acesso total ao app, incluindo colaboradores, permissões e reaberturas."
   },
   {
     permission: "gkli_flex.importacoes.read",
     label: "Ver importacoes",
     module: "Importacoes",
-    description: "Consulta historico, validacoes e inconsistencias de arquivos."
+    description: "Consulta histórico, validações e inconsistências de arquivos."
   },
   {
     permission: "gkli_flex.importacoes.write",
     label: "Operar importacoes",
     module: "Importacoes",
-    description: "Envia arquivos, confirma importacoes e registra inconsistencias."
+    description: "Envia arquivos, confirma importações e registra inconsistências."
   },
   {
     permission: "gkli_flex.financeiro.read",
     label: "Ver financeiro",
     module: "Financeiro",
-    description: "Consulta receitas, despesas, extratos, categorias e orcamento."
+    description: "Consulta receitas, despesas, extratos, categorias e orçamento."
   },
   {
     permission: "gkli_flex.financeiro.write",
     label: "Operar financeiro",
     module: "Financeiro",
-    description: "Classifica lancamentos, ajusta categorias, regras e orcamentos."
+    description: "Classifica lançamentos, ajusta categorias, regras e orçamentos."
   },
   {
     permission: "gkli_flex.comissoes.read",
     label: "Ver comissoes",
     module: "Comissoes",
-    description: "Consulta calculos, conferencias e historico de comissoes."
+    description: "Consulta cálculos, conferências e histórico de comissões."
   },
   {
     permission: "gkli_flex.comissoes.write",
     label: "Operar comissoes",
     module: "Comissoes",
-    description: "Calcula, ajusta, confere, rejeita e retorna comissoes."
+    description: "Calcula, ajusta, confere, rejeita e retorna comissões."
   },
   {
     permission: "gkli_flex.comissoes.approve",
     label: "Aprovar comissoes",
     module: "Comissoes",
-    description: "Aprova comissoes individualmente, em lote ou por competencia."
+    description: "Aprova comissões individualmente, em lote ou por competência."
   },
   {
     permission: "gkli_flex.pagamentos.read",
     label: "Ver pagamentos",
     module: "Pagamentos",
-    description: "Consulta agenda, recorrencias e confirmacoes de pagamento."
+    description: "Consulta agenda, recorrências e confirmações de pagamento."
   },
   {
     permission: "gkli_flex.pagamentos.write",
@@ -76,25 +76,25 @@ export const flexPermissionCatalog: {
     permission: "gkli_flex.fechamentos.close",
     label: "Fechar competencia",
     module: "Fechamentos",
-    description: "Executa fechamento mensal quando nao houver bloqueios."
+    description: "Executa fechamento mensal quando não houver bloqueios."
   },
   {
     permission: "gkli_flex.fechamentos.reopen",
     label: "Reabrir competencia",
     module: "Fechamentos",
-    description: "Reabre competencia fechada com motivo obrigatorio e auditoria."
+    description: "Reabre competência fechada com motivo obrigatório e auditoria."
   },
   {
     permission: "gkli_flex.gestao.read",
     label: "Ver gestao",
     module: "Gestao",
-    description: "Consulta dashboard gerencial, indicadores e relatorios."
+    description: "Consulta dashboard gerencial, indicadores e relatórios."
   },
   {
     permission: "gkli_flex.acessos.write",
     label: "Gerir acessos",
-    module: "Administracao",
-    description: "Cria colaboradores, times, perfis e vinculos de permissoes."
+    module: "Administração",
+    description: "Cria colaboradores, times, perfis e vínculos de permissões."
   }
 ];
 
@@ -102,7 +102,7 @@ export const baseRoles: FlexRole[] = [
   {
     id: "role-admin",
     nome: "Administrador",
-    descricao: "Gestao completa do GKLI Flex.",
+    descricao: "Gestão completa do GKLI Flex.",
     permissions: ["gkli_flex.admin"],
     status: "ativo",
     createdAt: "2026-06-01T09:00:00.000Z",
@@ -111,7 +111,7 @@ export const baseRoles: FlexRole[] = [
   {
     id: "role-financeiro",
     nome: "Operacao financeira",
-    descricao: "Rotina diaria de importacoes, financeiro e pagamentos.",
+    descricao: "Rotina diária de importações, financeiro e pagamentos.",
     permissions: [
       "gkli_flex.importacoes.read",
       "gkli_flex.importacoes.write",
@@ -128,7 +128,7 @@ export const baseRoles: FlexRole[] = [
   {
     id: "role-gestao",
     nome: "Gestao",
-    descricao: "Acesso gerencial a indicadores, comissoes e fechamentos.",
+    descricao: "Acesso gerencial a indicadores, comissões e fechamentos.",
     permissions: [
       "gkli_flex.financeiro.read",
       "gkli_flex.comissoes.read",

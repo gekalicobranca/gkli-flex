@@ -10,16 +10,17 @@ export default async function ImportacoesPage() {
   return (
     <FlexShell
       activeHref="/modulos/gkli-flex/importacoes"
-      title="Importacoes"
+      title="Importações"
       description="Entrada controlada de Omie XLSX e Banco Inter CSV."
     >
       <PageHeader
+        eyebrow="Operação"
         title="Importar, validar e persistir"
-        description="Cada arquivo passa por pre-validacao, exibicao de inconsistencias e confirmacao antes de gravar dados no schema do Flex."
+        description="Cada arquivo passa por pré-validação, exibição de inconsistências e confirmação antes de gravar dados no schema do Flex."
         actions={
           <button className="button">
             <UploadCloud size={16} />
-            Nova importacao
+            Nova importação
           </button>
         }
       />
@@ -41,7 +42,7 @@ export default async function ImportacoesPage() {
       </div>
 
       <div className="grid stack-lg">
-        <Panel title="Lotes em processamento" note="Competencia aberta">
+        <Panel title="Lotes em processamento" note="Competência aberta">
           <table className="table">
             <thead>
               <tr>
@@ -115,7 +116,7 @@ export default async function ImportacoesPage() {
       </div>
 
       <div className="grid cols-2 stack-lg">
-        <Panel title="Inconsistencias" note="Revisao antes de confirmar">
+        <Panel title="Inconsistências" note="Revisão antes de confirmar">
           <div className="list">
             {dashboard.batches.flatMap((batch) =>
               batch.issues.map((issue) => (
@@ -136,13 +137,13 @@ export default async function ImportacoesPage() {
           </div>
         </Panel>
 
-        <Panel title="Previa normalizada" note="Amostra do que sera persistido">
+        <Panel title="Prévia normalizada" note="Amostra do que será persistido">
           <table className="table">
             <thead>
               <tr>
                 <th>Linha</th>
                 <th>Tipo</th>
-                <th>Descricao</th>
+                <th>Descrição</th>
                 <th>Valor</th>
                 <th>Status</th>
               </tr>

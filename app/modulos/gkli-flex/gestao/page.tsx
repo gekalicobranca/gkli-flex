@@ -9,12 +9,13 @@ export default async function GestaoPage() {
   return (
     <FlexShell
       activeHref="/modulos/gkli-flex/gestao"
-      title="Gestao"
+      title="Gestão"
       description="Indicadores consolidados separados do cockpit operacional."
     >
       <PageHeader
+        eyebrow="Gestão"
         title="Dashboard gerencial"
-        description="Visao de gestao para receitas, despesas, resultado operacional, comissoes e pagamentos."
+        description="Visão de gestão para receitas, despesas, resultado operacional, comissões e pagamentos."
         actions={
           <button className="button secondary">
             <Download size={16} />
@@ -33,7 +34,7 @@ export default async function GestaoPage() {
       </div>
 
       <div className="grid cols-2" style={{ marginTop: 16 }}>
-        <Panel title="Relatorios" note="Exportacoes">
+        <Panel title="Relatórios" note="Exportações">
           <div className="list">
             {dashboard.reports.map((report) => (
               <div className="list-item" key={report.id}>
@@ -49,7 +50,7 @@ export default async function GestaoPage() {
           </div>
         </Panel>
 
-        <Panel title="Competencias" note="Historico gerencial">
+        <Panel title="Competências" note="Histórico gerencial">
           <div className="list">
             {dashboard.timeline.map((item) => (
               <div className="list-item" key={item.id}>

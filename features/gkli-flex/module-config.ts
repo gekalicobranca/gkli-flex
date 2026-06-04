@@ -34,35 +34,35 @@ export const flexModules = [
     href: "/modulos/gkli-flex",
     icon: LayoutDashboard,
     permission: "gkli_flex.financeiro.read",
-    group: "Operacao"
+    group: "Operação"
   },
   {
-    title: "Importacoes",
+    title: "Importações",
     href: "/modulos/gkli-flex/importacoes",
     icon: FileSpreadsheet,
     permission: "gkli_flex.importacoes.read",
-    group: "Operacao"
+    group: "Operação"
   },
   {
     title: "Financeiro",
     href: "/modulos/gkli-flex/financeiro",
     icon: ReceiptText,
     permission: "gkli_flex.financeiro.read",
-    group: "Operacao"
+    group: "Operação"
   },
   {
-    title: "Comissoes",
+    title: "Comissões",
     href: "/modulos/gkli-flex/comissoes",
     icon: BadgeDollarSign,
     permission: "gkli_flex.comissoes.read",
-    group: "Operacao"
+    group: "Operação"
   },
   {
     title: "Pagamentos",
     href: "/modulos/gkli-flex/pagamentos",
     icon: Banknote,
     permission: "gkli_flex.pagamentos.read",
-    group: "Operacao"
+    group: "Operação"
   },
   {
     title: "Fechamentos",
@@ -83,14 +83,14 @@ export const flexModules = [
     href: "/modulos/gkli-flex/colaboradores",
     icon: Users,
     permission: "gkli_flex.acessos.write",
-    group: "Administracao"
+    group: "Administração"
   },
   {
     title: "Acessos",
     href: "/modulos/gkli-flex/acessos",
     icon: LockKeyhole,
     permission: "gkli_flex.acessos.write",
-    group: "Administracao"
+    group: "Administração"
   }
 ];
 

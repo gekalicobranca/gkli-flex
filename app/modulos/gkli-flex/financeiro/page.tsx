@@ -15,11 +15,12 @@ export default async function FinanceiroPage() {
     <FlexShell
       activeHref="/modulos/gkli-flex/financeiro"
       title="Financeiro"
-      description="Receitas, despesas, extratos, categorias, regras e orcamento."
+      description="Receitas, despesas, extratos, categorias, regras e orçamento."
     >
       <PageHeader
+        eyebrow="Operação"
         title="Controle financeiro light"
-        description="Acompanhe previsto x realizado por competencia, sem contas a receber detalhado e sem conciliacao bancaria avancada."
+        description="Acompanhe previsto x realizado por competência, sem contas a receber detalhado e sem conciliação bancária avançada."
         actions={
           <button className="button secondary">
             <SlidersHorizontal size={16} />
@@ -31,18 +32,18 @@ export default async function FinanceiroPage() {
       <div className="grid cols-3">
         <Panel title="Receitas" note="Realizado">
           <div className="metric">{formatCurrency(dashboard.overview.totalReceitas)}</div>
-          <p className="item-meta">Receitas confirmadas na competencia.</p>
+          <p className="item-meta">Receitas confirmadas na competência.</p>
         </Panel>
         <Panel title="Despesas" note="Classificadas e pendentes">
           <div className="metric">{formatCurrency(dashboard.overview.totalDespesas)}</div>
           <p className="item-meta">
-            {dashboard.overview.lancamentosNaoClassificados} lancamento sem classificacao.
+            {dashboard.overview.lancamentosNaoClassificados} lançamento sem classificação.
           </p>
         </Panel>
         <Panel title="Resultado operacional" note="Previo">
           <div className="metric">{formatCurrency(dashboard.overview.resultadoOperacional)}</div>
           <p className="item-meta">
-            {dashboard.overview.divergenciasOrcamento} divergencias no orcamento.
+            {dashboard.overview.divergenciasOrcamento} divergências no orçamento.
           </p>
         </Panel>
       </div>
@@ -98,12 +99,12 @@ export default async function FinanceiroPage() {
       </div>
 
       <div className="grid stack-lg">
-        <Panel title="Lancamentos de extrato" note="Classificacao operacional">
+        <Panel title="Lançamentos de extrato" note="Classificação operacional">
           <table className="table">
             <thead>
               <tr>
                 <th>Data</th>
-                <th>Descricao</th>
+                <th>Descrição</th>
                 <th>Categoria</th>
                 <th>Regra</th>
                 <th>Valor</th>
@@ -137,7 +138,7 @@ export default async function FinanceiroPage() {
       </div>
 
       <div className="grid cols-2 stack-lg">
-        <Panel title="Categorias e regras" note="Classificacao automatica">
+        <Panel title="Categorias e regras" note="Classificação automática">
           <div className="list">
             {dashboard.categories.map((category) => {
               const categoryRules = dashboard.rules.filter(
@@ -159,7 +160,7 @@ export default async function FinanceiroPage() {
           </div>
         </Panel>
 
-        <Panel title="Orcamento da competencia" note="Previsto x realizado">
+        <Panel title="Orçamento da competência" note="Previsto x realizado">
           <table className="table">
             <thead>
               <tr>

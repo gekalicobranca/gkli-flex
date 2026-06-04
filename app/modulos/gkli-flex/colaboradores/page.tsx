@@ -9,11 +9,12 @@ export default async function ColaboradoresPage() {
     <FlexShell
       activeHref="/modulos/gkli-flex/colaboradores"
       title="Colaboradores"
-      description="Cadastro proprio do Flex para times, operacao e permissoes."
+      description="Cadastro próprio do Flex para times, operação e permissões."
     >
       <PageHeader
+        eyebrow="Administração"
         title="Cadastro de colaboradores"
-        description="O Flex tera colaboradores criados dentro do proprio app, sem depender do cadastro do COB ou do Genske."
+        description="O Flex terá colaboradores criados dentro do próprio app, sem depender do cadastro do COB ou do Genske."
         actions={
           <button className="button">
             <UserPlus size={16} />

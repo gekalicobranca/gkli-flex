@@ -16,21 +16,22 @@ export default async function CockpitPage() {
     <FlexShell
       activeHref="/modulos/gkli-flex"
       title="Cockpit operacional"
-      description="Mesa diaria para resolver pendencias da competencia aberta."
+      description="Mesa diária para resolver pendências da competência aberta."
     >
       <PageHeader
+        eyebrow="Operação"
         title="O que precisa ser resolvido agora"
-        description="Visao operacional da competencia, sem graficos gerenciais pesados. O foco aqui e pendencia, bloqueio e andamento."
+        description="Visão operacional da competência, sem gráficos gerenciais pesados. O foco aqui é pendência, bloqueio e andamento."
       />
 
       <div className="grid cols-3">
-        <Panel title="Competencia aberta" note={activeCompetence.status}>
+        <Panel title="Competência aberta" note={activeCompetence.status}>
           <div className="metric">{competenceLabel}</div>
           <p className="item-meta">Aberta em {activeCompetence.inicio}</p>
         </Panel>
-        <Panel title="Andamento do periodo" note="Operacao">
+        <Panel title="Andamento do período" note="Operação">
           <div className="metric">62%</div>
-          <p className="item-meta">Baseado em importacoes, classificacoes e pagamentos.</p>
+          <p className="item-meta">Baseado em importações, classificações e pagamentos.</p>
         </Panel>
         <Panel title="Bloqueios" note="Fechamento">
           <div className="metric">3</div>
@@ -39,7 +40,7 @@ export default async function CockpitPage() {
       </div>
 
       <div className="grid cols-2 stack-lg">
-        <Panel title="Tarefas prioritarias" note="Hoje">
+        <Panel title="Tarefas prioritárias" note="Hoje">
           <div className="list">
             {cockpitTasks.map((task) => (
               <div className="list-item" key={task.title}>

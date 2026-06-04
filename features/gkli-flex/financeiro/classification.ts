@@ -11,7 +11,7 @@ export function classifyEntry(entry: StatementEntry, rules: ClassificationRule[]
 
 export function getEntryStatusLabel(status: StatementEntry["status"]) {
   const labels: Record<StatementEntry["status"], string> = {
-    nao_classificado: "Nao classificado",
+    nao_classificado: "Não classificado",
     classificado: "Classificado",
     conciliado: "Conciliado",
     ignorado: "Ignorado",

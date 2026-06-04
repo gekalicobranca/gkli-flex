@@ -5,16 +5,16 @@ export const importSourceDefinitions: ImportSourceDefinition[] = [
     origem: "omie",
     nome: "Omie",
     formato: "xlsx",
-    objetivo: "Importar receitas, alimentar comissoes e criar categorias quando necessario.",
-    cria: ["Receitas", "Base de comissoes", "Categorias financeiras"],
-    fluxo: ["Selecionar arquivo", "Pre-validar", "Exibir inconsistencias", "Confirmar", "Persistir"]
+    objetivo: "Importar receitas, alimentar comissões e criar categorias quando necessário.",
+    cria: ["Receitas", "Base de comissões", "Categorias financeiras"],
+    fluxo: ["Selecionar arquivo", "Pré-validar", "Exibir inconsistências", "Confirmar", "Persistir"]
   },
   {
     origem: "banco_inter",
     nome: "Banco Inter",
     formato: "csv",
-    objetivo: "Importar extratos, criar lancamentos e executar classificacao automatica.",
-    cria: ["Extratos", "Lancamentos", "Classificacao automatica"],
+    objetivo: "Importar extratos, criar lançamentos e executar classificação automática.",
+    cria: ["Extratos", "Lançamentos", "Classificação automática"],
     fluxo: ["Selecionar arquivo", "Validar", "Classificar", "Confirmar", "Persistir"]
   }
 ];

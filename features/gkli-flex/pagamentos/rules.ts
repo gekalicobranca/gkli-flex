@@ -25,8 +25,8 @@ export function getPaymentStatusTone(status: PaymentStatus) {
 
 export function getPaymentTypeLabel(type: PaymentType) {
   const labels: Record<PaymentType, string> = {
-    comissao: "Comissao",
-    salario: "Salario",
+    comissao: "Comissão",
+    salario: "Salário",
     pro_labore: "Pro-labore",
     fornecedor: "Fornecedor",
     reembolso: "Reembolso",

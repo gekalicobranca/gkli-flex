@@ -16,16 +16,17 @@ export default async function ComissoesPage() {
   return (
     <FlexShell
       activeHref="/modulos/gkli-flex/comissoes"
-      title="Comissoes"
-      description="Calculo, conferencia, aprovacao, pagamento e quitacao."
+      title="Comissões"
+      description="Cálculo, conferência, aprovação, pagamento e quitação."
     >
       <PageHeader
-        title="Comissoes por competencia"
-        description="Fluxo formal a partir das receitas importadas, com conferencia e aprovacao individual, em lote ou por competencia."
+        eyebrow="Operação"
+        title="Comissões por competência"
+        description="Fluxo formal a partir das receitas importadas, com conferência e aprovação individual, em lote ou por competência."
         actions={
           <button className="button">
             <CheckCheck size={16} />
-            Aprovar lote
+            Aprovar em lote
           </button>
         }
       />
@@ -39,7 +40,7 @@ export default async function ComissoesPage() {
           <div className="metric">{formatCurrency(dashboard.overview.totalAprovado)}</div>
           <p className="item-meta">Pronto para entrar em pagamentos.</p>
         </Panel>
-        <Panel title="Pendencias" note="Conferencia/aprovacao">
+        <Panel title="Pendências" note="Conferência/aprovação">
           <div className="metric">{dashboard.overview.pendentesConferencia + dashboard.overview.pendentesAprovacao}</div>
           <p className="item-meta">
             {dashboard.overview.pendentesConferencia} para conferir ·{" "}
@@ -49,7 +50,7 @@ export default async function ComissoesPage() {
       </div>
 
       <div className="grid cols-2 stack-lg">
-        <Panel title="Tipos de comissao" note="Regras ativas">
+        <Panel title="Tipos de comissão" note="Regras ativas">
           <div className="list">
             {dashboard.types.map((type) => (
               <div className="list-item" key={type.id}>
@@ -83,7 +84,7 @@ export default async function ComissoesPage() {
       </div>
 
       <div className="grid stack-lg">
-        <Panel title="Conferencia" note="Pendencias atuais">
+        <Panel title="Conferência" note="Pendências atuais">
           <table className="table">
             <thead>
               <tr>
